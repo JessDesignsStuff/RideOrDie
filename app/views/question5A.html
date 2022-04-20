@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Set the scene – {{ serviceName }} – GOV.UK Prototype Kit
+  The marshy bogs – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,13 +13,38 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Heading or question goes here</h1>
+      <h1 class="govuk-heading-xl">The marshy bogs</h1>
 
-      <form class="form" action="/question2" method="post">
+      <form class="form" action="/question5A-answer" method="post">
 
-        <p>[Insert question content here]</p>
+        <p>It's a wonderful day at the marshy bogs. <br> The mushrooms are glistening in the sunlight. <br> Suddenly, a slime monster emerges from the bogs.<br> They slime their way over to you and {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} <br> "Come for a dip in the bog!" says the slime monster.</p>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h2 class="govuk-fieldset__heading">
+                What do you do?
+              </h2>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="what-do-you-do" name="what-do-you-do" type="radio" value="take a dip in the bogs">
+                <label class="govuk-label govuk-radios__label" for="what-do-you-do">
+                  Take a dip in the bogs
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="what-do-you-do-2" name="what-do-you-do" type="radio" value="decline politely">
+                <label class="govuk-label govuk-radios__label" for="what-do-you-do-2">
+                  Decline politely
+                </label>
+              </div>
+              
+              
+            </div>
+        
+          </fieldset>
+        </div>
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 

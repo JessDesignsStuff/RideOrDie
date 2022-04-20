@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Name the companion – {{ serviceName }} – GOV.UK Prototype Kit
+  Setting off – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,13 +13,14 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Heading or question goes here</h1>
+      <h1 class="govuk-heading-xl">Setting off</h1>
 
       <form class="form" action="/question4" method="post">
 
-        <p>[Insert question content here]</p>
+        <p>Hi {{ data['your-name'] }}. <br> It's a fine day. You and your {{ data['companion'] }} called {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }}
+        are about to leave on an adventure.</p>
 
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+      
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 

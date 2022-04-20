@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Set the scene – {{ serviceName }} – GOV.UK Prototype Kit
+  The adventure – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,14 +13,41 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Heading or question goes here</h1>
+      <h1 class="govuk-heading-xl">The adventure</h1>
 
-      <form class="form" action="/question2" method="post">
+      <form class="form" action="/question4-answer" method="post">
 
-        <p>[Insert question content here]</p>
-
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
-
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Where will your adventure take place today?
+              </h1>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-will-you-adventure" name="where-will-you-adventure" type="radio" value="The marshy bogs">
+                <label class="govuk-label govuk-radios__label" for="where-will-you-adventure">
+                  The marshy bogs
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-will-you-adventure-2" name="where-will-you-adventure" type="radio" value="The castle ruins">
+                <label class="govuk-label govuk-radios__label" for="where-will-you-adventure-2">
+                  The castle ruins
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-will-you-adventure-3" name="where-will-you-adventure" type="radio" value="The murky caves">
+                <label class="govuk-label govuk-radios__label" for="where-will-you-adventure-3">
+                  The murky caves
+                </label>
+              </div>
+              
+            </div>
+        
+          </fieldset>
+        </div> 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 
       </form>

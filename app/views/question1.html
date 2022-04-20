@@ -13,13 +13,20 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Heading or question goes here</h1>
+      
 
       <form class="form" action="/question2" method="post">
 
-        <p>[Insert question content here]</p>
-
-        <p>[See <a href="https://design-system.service.gov.uk">the GOV.UK Design System</a> for examples]</p>
+            <div class="govuk-form-group">
+              <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="your-name">
+                  What is your name?
+                </label>
+              </h1>
+              <div id="your-name-hint" class="govuk-hint">
+                This is the name we'll use on your adventure.
+              </div>
+              <input class="govuk-input" id="your-name" name="your-name" type="text" aria-describedby="your-name-hint">
+            </div>
 
         <button class="govuk-button" data-module="govuk-button">Continue</button>
 

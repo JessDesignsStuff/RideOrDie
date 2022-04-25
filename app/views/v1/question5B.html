@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  The castle ruins – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">The castle ruins</h1>
+
+      <form class="form" action="/v1/question5B-answer" method="post">
+
+        <p>It's a rainy day at the castle ruins. <br> It's a little difficult to see. <br> The rain gets heavier and heavier.<br> {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} looks at you sadly and shivers.<br> You sneeze.</p>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h2 class="govuk-fieldset__heading">
+                What do you do?
+              </h2>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="what-to-do" name="what-to-do" type="radio" value="seek sheler in the ruins">
+                <label class="govuk-label govuk-radios__label" for="what-to-do">
+                  Seek shelter in the ruins
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="what-to-do-2" name="what-to-do" type="radio" value="turn back">
+                <label class="govuk-label govuk-radios__label" for="what-to-do-2">
+                  Turn back
+                </label>
+              </div>
+              
+              
+            </div>
+        
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

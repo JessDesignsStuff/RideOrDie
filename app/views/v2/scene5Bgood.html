@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Turning back – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+        Turning back
+      </h1>
+
+      <p>You and {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} turn back. <br>The rain eases and you happen upon a little old woman. <br> You offer her your coat so she can get a little respite from the rain.<br> She is so grateful that she invites you to her cottage for dinner.<br> You enjoy a scrumptious meal together and stay the night.<br> The next day the sun is shining.<br> A great day for an adventure! </p>
+
+      
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Congratulations!
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              
+              You know all about <a href="https://youtu.be/pX613U_DWzE">friendship</a>
+              
+            </li>
+            <li>Feel free to<a href="/v2/start"> play again</a></li>
+         
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}

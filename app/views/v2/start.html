@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Welcome – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/index">Service index</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Ride or die</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-5">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p class="govuk-body govuk-!-margin-bottom-1">This service will:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>ask you some questions</li>
+        <li>use your responses to generate a humourous story</li>
+        <li>determine whether you "Ride or Die"</li>
+      </ul>
+
+      <p>This will only take a few minutes. <br> It's supposed to be fun.</p>
+
+      <a href="/v2/question1" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Before you start</h2>
+
+      <p>Get ready to have fun. <br>Smile.</p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          What is a "ride or die"?
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              
+                When you are willing to do anything for someone <b>you love</b> or someone you <b>really appreciate</b> in your life. <li> The person who you stand by in <b>any problem</b> and vice versa. </li><li> Possibly from the expression: <br><i>"ride til the end or die trying"</i></li>
+              
+            </li>
+            
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

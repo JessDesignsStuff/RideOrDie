@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Turning back – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -14,27 +14,28 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
-        Seeking shelter
+        Turning back
       </h1>
 
-      <p>You seek shelter with your companions in the ruins. <br> "CRACK!" <br> Some loose stones fall down and suddenly the Castle ruins fall into a giant sink hole. <br> You and {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} are lost to the abyss.<br> What an unpredictable ending to your adventures.  </p>
+      <p>You and {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} turn back. <br>The rain eases and you happen upon a little old woman. <br> You offer her your coat so she can get a little respite from the rain.<br> She is so grateful that she invites you to her cottage for dinner.<br> You enjoy a scrumptious meal together and stay the night.<br> The next day the sun is shining.<br> A great day for an adventure! </p>
 
+      
 
     </div>
     <div class="govuk-grid-column-one-third">
 
       <aside class="app-related-items" role="complementary">
         <h2 class="govuk-heading-m" id="subsection-title">
-          Try again
+          Congratulations!
         </h2>
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-!-font-size-16">
             <li>
               
-              <a href="https://youtu.be/pX613U_DWzE">Follow this link</a> to learn about friendship.
+              You know all about <a href="https://youtu.be/pX613U_DWzE">friendship</a>
               
             </li>
-            <li><a href="/start" class="govuk-!-font-weight-bold">Start again here</a></li>
+            <li>Feel free to<a href="/v1/start"> play again</a></li>
          
           </ul>
         </nav>

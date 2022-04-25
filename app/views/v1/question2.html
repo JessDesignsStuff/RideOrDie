@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Choose a companion – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Choose a companion</h1>
+
+      <form class="form" action="/v1/question3" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Who will accompany you on your adventure?
+              </h1>
+            </legend>
+            <div id="contact-hint" class="govuk-hint">
+              Select one option.
+            </div>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="companion" name="companion" type="radio" value="mystic cat" data-aria-controls="conditional-companion">
+                <label class="govuk-label govuk-radios__label" for="companion">
+                  Mystic cat
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-companion">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="companion-cat-name">
+                    Name your companion
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="companion-cat-name" name="companion-cat-name" type="mystic cat" spellcheck="false" autocomplete="mystic cat">
+                </div>
+        
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="companion-2" name="companion" type="radio" value="loyal dog" data-aria-controls="conditional-companion-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Loyal dog
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-companion-2">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="companion-dog-name">
+                    Name your companion
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="companion-dog-name" name="companion-dog-name" type="loyal dog" autocomplete="loyal dog">
+                </div>
+        
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="companion-3" name="companion" type="radio" value="cheerful rabbit" data-aria-controls="conditional-companion-3">
+                <label class="govuk-label govuk-radios__label" for="companion-3">
+                  Cheerful rabbit
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-companion-3">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="companion-rabbit-name">
+                    Name your companion
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="companion-rabbit-name" name="companion-rabbit-name" type="cheerful rabbit" autocomplete="cheerful rabbit">
+                </div>
+        
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="companion-4" name="companion" type="radio" value="wise turtle" data-aria-controls="conditional-companion-4">
+                <label class="govuk-label govuk-radios__label" for="companion-4">
+                  Wise turtle
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-companion-4">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="companion-turtle-name">
+                    Name your companion
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-third" id="companion-turtle-name" name="companion-turtle-name" type="wise turtle" autocomplete="wise turtle">
+                </div>
+        
+              </div>
+            </div>
+        
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

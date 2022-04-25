@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Diamond trade – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+        Diamond trade
+      </h1>
+
+      <p>You decide to hand over {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }}. <br>If {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} were in the wild, {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} would get eaten anyway!<br>The goblin takes one step towards {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }}.<br> Suddenly there's a bright flash of light. <br> The goblin transforms into a beautiful fairy!<br> "How could you be so cruel?" says the fairy, "Your friend has a purer heart than you do" <br> The fairy twirls in the air and casts a spell.<br> BANG!<br> Suddenly, you shrink and turn into a frog. <br> Your companion also changes into a human!<br>The fairy laughs and disappears.</p>
+      
+      
+    
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Try again
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              
+              <a href="https://youtu.be/pX613U_DWzE">Follow this link</a> to learn about friendship.
+              
+            </li>
+            <li><a href="/v1/start" class="govuk-!-font-weight-bold">Start again here</a></li>
+         
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+{% endblock %}

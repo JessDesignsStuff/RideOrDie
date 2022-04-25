@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+        A dip in the bogs
+      </h1>
+
+      <p>You decide to take a dip in the bogs with the Slime monster. <br>You become great friends.<br> As the sun begins to set, you decide it's time to leave. <br> "I had a great day with you!" says the slime monster, "Have this!" <br> He hands you 13 gold coins! <br> Your day was a success! </p>
+
+      
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Congratulations!
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              
+              You know all about <a href="https://youtu.be/pX613U_DWzE">friendship</a>
+              
+            </li>
+            <li>Feel free to<a href="/v2/start"> play again</a></li>
+         
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}

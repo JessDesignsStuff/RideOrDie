@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+  No way – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
@@ -14,13 +14,15 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
-        A dip in the bogs
+        No way!
       </h1>
 
-      <p>You decide to take a dip in the bogs with the Slime monster. <br>You become great friends.<br> As the sun begins to set, you decide it's time to leave. <br> "I had a great day with you!" says the slime monster, "Have this!" <br> He hands you 13 gold coins! <br> Your day was a success! </p>
+      <p>"No amount of riches can replace my friend!" you tell the goblin. <br> You turn to walk away and suddenly there's a flash of light! <br> You turn round to find that the goblin has turned into a beautiful fairy! <br>"Your friendship is so pure!" she says,"This treasure is yours - I'll help transport it to your home!"<br> You, the fairy and {{ data['companion-turtle-name'] }}{{ data['companion-cat-name'] }}{{ data['companion-dog-name'] }}{{ data['companion-rabbit-name'] }} head home.<br>What an excellent day!</p>
 
-      
+     
+
     </div>
+
     <div class="govuk-grid-column-one-third">
 
       <aside class="app-related-items" role="complementary">
@@ -34,13 +36,14 @@
               You know all about <a href="https://youtu.be/pX613U_DWzE">friendship</a>
               
             </li>
-            <li>Feel free to<a href="/start"> play again</a></li>
+            <li>Feel free to<a href="/v1/start"> play again</a></li>
          
           </ul>
         </nav>
       </aside>
 
     </div>
+
   </div>
 
 {% endblock %}
